@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+
+*.log
+*.gz
+*.aux
+*.fdb_latexmk
+*.gz(busy)
