@@ -22,22 +22,20 @@
 axis x line=center,
 axis y line=none,ymin=-1.5,ymax=1.5,
 xmin=-0.03,xmax=1.1,
-xticklabel=\empty
-]
+xticklabel=\empty,
+extra x ticks={0.1, 0.3},
+extra x tick labels={$x_{\frac{1}{2}}$, $x_{\frac{3}{2}}$}]
 \node[black,above] at (axis cs:0.0,-0.3){\small{$x_0$}};
+%\node[black,above] at (axis cs:0.1,-0.3){\small{$x_{\frac{1}{2}}$}};
 \node[black,above] at (axis cs:0.2,-0.3){\small{$x_1$}};
+%\node[black,above] at (axis cs:0.3,-0.3){\small{$x_{\frac{3}{2}}$}};
 \node[black,above] at (axis cs:0.4,-0.3){\small{$x_2$}};
 \node[black,above] at (axis cs:0.6,-0.3){\small{$\cdots$}};
 \node[black,above] at (axis cs:0.8,-0.3){\small{$x_{M-1}$}};
 \node[black,above] at (axis cs:1.0,-0.3){\small{$x_M$}};
-\node[black,above] at (axis cs:0.3,0.15){\small{$\Delta x_{n_i}$}};
-
+\node[black,above] at (axis cs:0.2,0.15){\small{$\Delta x_{c_i}$}};
 \draw [decorate,decoration={brace,amplitude=4pt}]
-(0.2,0.1)--(0.4,0.1) node[midway, above, font=\footnotesize, xshift=2pt] {};
-
-
+(0.1,0.1)--(0.3,0.1) node[midway, above, font=\footnotesize, xshift=2pt] {};
 \end{axis}
 \end{tikzpicture}
-
-
 \end{document}
